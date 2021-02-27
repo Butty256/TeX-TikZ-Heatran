@@ -1,0 +1,30 @@
+\documentclass[fontsize=36pt]{jlreq}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{ulem}
+
+\renewcommand{\emph}[1]{\textbf{\textcolor{red}{#1}}}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+	ヒードランは，\\
+	十字の\emph{ツメ}を食いこませて\\
+	\emph{\TeX}や\sout{\emph{Ti\textit{k}Z}}を這い回る。\\[2cm]
+	\includegraphics[scale=4]{Heatran.png}
+\end{center}
+
+\newpage
+
+\begin{center}
+	ヒードランは，\\
+	十字の\emph{ツメ}を食いこませて\\
+	\emph{\TeX}や\emph{Ti\textit{k}Z}を這い回る。\\[4cm]
+	\tikzset{x=4pt,y=4pt}
+	\input{Heatran-TikZ}
+\end{center}
+
+\end{document}
